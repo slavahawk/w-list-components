@@ -1,6 +1,6 @@
 <template>
   <div class="flex gap-2 justify-self-start">
-    <div v-if="pricePerGlass" class="flex gap-2 items-center w-150px]">
+    <div v-if="pricePerGlass" class="flex gap-2 items-center w-[150px]">
       <Glass />
       <span class="text-xl">{{ formatPrice(pricePerGlass) }}</span>
       <sub v-if="glassVolume" class="text-xs items-end">{{ glassVolume }} мл</sub>

@@ -1,11 +1,11 @@
 <template>
   <div class="flex gap-2 justify-self-start">
-    <div v-if="pricePerGlass" class="flex gap-2 items-center w-[150px]">
+    <div v-if="pricePerGlass" class="flex gap-2 items-center widthItem">
       <Glass />
       <span class="text-xl">{{ formatPrice(pricePerGlass) }}</span>
       <sub v-if="glassVolume" class="text-xs items-end">{{ glassVolume }} мл</sub>
     </div>
-    <div v-if="pricePerBottle" class="flex gap-2 items-center w-[150px]">
+    <div v-if="pricePerBottle" class="flex gap-2 items-center widthItem">
       <Bottle />
       <span class="text-xl">{{ formatPrice(pricePerBottle) }}</span>
       <sub v-if="bottleVolume" class="text-xs items-end">{{ bottleVolume }} мл</sub>
@@ -26,4 +26,8 @@ defineProps<{
 }>();
 </script>
 
-<style scoped></style>
+<style scoped>
+.widthItem {
+  width: 150px
+}
+</style>

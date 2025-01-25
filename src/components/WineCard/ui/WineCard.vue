@@ -7,9 +7,7 @@
         {{ country }},
         {{ region }}
       </p>
-
       <p class="mb-4">
-        <strong>Органолептические характеристики:</strong>
         {{ organoleptic }}
       </p>
       <slot/>
@@ -19,8 +17,7 @@
       <p class="mb-4">
         <strong>Сорта винограда: </strong>
         <span v-for="(g, index) in grapes" :key="g">
-          {{ g }}
-          <span v-if="index < grapes.length - 1">, </span>
+          {{ g }}<span v-if="index < grapes.length - 1">, </span>
         </span>
       </p>
 

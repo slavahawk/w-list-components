@@ -1,17 +1,24 @@
 <template>
-  <div class="wine-detail" >
-    <img :src="originalImagePath" alt="Wine Image" class="wine-image" />
+  <div class="wine-detail">
+    <img :src="originalImagePath" alt="Wine Image" class="wine-image"/>
     <div class="wine-info">
       <h3 class="text-xl mb-4">{{ name }}</h3>
       <p class="mb-4" style="color: var(--primary-color)">
-        {{country }},
+        {{ country }},
         {{ region }}
       </p>
       <p class="mb-4">{{ interestingFacts }}</p>
 
-      <slot />
+      <slot/>
       <p class="mb-4">
         <strong>Год урожая:</strong> {{ vintage }}
+      </p>
+      <p class="mb-4">
+        <strong>Сорта винограда: </strong>
+        <span v-for="(g, index) in grapes" :key="g">
+          {{ g }}
+          <span v-if="index < grapes.length - 1">, </span>
+        </span>
       </p>
 
       <p class="mb-4">
@@ -43,6 +50,7 @@ defineProps<{
   name: string
   country: string
   region: string
+  grapes: string[]
   interestingFacts: string
   vintage: string | number
   category: string

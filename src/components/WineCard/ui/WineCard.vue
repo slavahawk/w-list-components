@@ -7,8 +7,11 @@
         {{ country }},
         {{ region }}
       </p>
-      <p class="mb-4">{{ interestingFacts }}</p>
 
+      <p class="mb-4">
+        <strong>Органолептические характеристики:</strong>
+        {{ organoleptic }}
+      </p>
       <slot/>
       <p class="mb-4">
         <strong>Год урожая:</strong> {{ vintage }}
@@ -36,10 +39,7 @@
         <strong>Уровень сахара:</strong>
         {{ sugarType }}
       </p>
-      <p>
-        <strong>Органолептические характеристики:</strong>
-        {{ organoleptic }}
-      </p>
+      <p>{{ interestingFacts }}</p>
     </div>
   </div>
 </template>

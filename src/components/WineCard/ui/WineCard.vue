@@ -67,4 +67,8 @@ defineProps<{
   margin: 0 auto;
   max-height: calc(100vh - 200px);
 }
+
+.wine-info {
+  overflow: scroll;
+}
 </style>

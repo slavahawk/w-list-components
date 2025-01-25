@@ -1,16 +1,16 @@
 <template>
-  <div class="grid gap-2 justify-self-start" style="grid-template-columns: 1fr 1fr;">
+  <div class="grid justify-self-start" style="grid-template-columns: 1fr 1fr;">
     <div>
       <div v-if="pricePerGlass" class="flex gap-2 items-center widthItem">
         <Glass />
-        <span class="text-xl">{{ formatPrice(pricePerGlass) }}</span>
+        <span>{{ formatPrice(pricePerGlass) }}</span>
         <sub v-if="glassVolume" class="text-xs items-end">{{ glassVolume }} мл</sub>
       </div>
     </div>
     <div>
       <div v-if="pricePerBottle" class="flex gap-2 items-center widthItem">
         <Bottle />
-        <span class="text-xl">{{ formatPrice(pricePerBottle) }}</span>
+        <span>{{ formatPrice(pricePerBottle) }}</span>
         <sub v-if="bottleVolume" class="text-xs items-end">{{ bottleVolume }} мл</sub>
       </div>
     </div>

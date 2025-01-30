@@ -75,7 +75,7 @@ defineProps<{
   position: sticky;
   top: 0;
   margin: 0 auto;
-  max-height: calc(100vh - 200px);
+  max-height: calc(100vh - 300px);
 
     @media screen and (max-width: 765px) {
     position: relative;

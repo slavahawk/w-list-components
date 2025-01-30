@@ -66,8 +66,7 @@ defineProps<{
   position: relative;
 
   @media screen and (max-width: 765px) {
-      grid-template-columns: 1fr;
-      grid-template-rows: 400px 1fr;
+      display: block;
       overflow-y: scroll;
   }
 }
@@ -83,6 +82,7 @@ defineProps<{
     top: auto;
     height: 100%;
     display: block;
+      margin: 0 auto 24px;
   }
 }
 

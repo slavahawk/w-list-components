@@ -1,6 +1,6 @@
 <template>
   <div class="wine-detail">
-    <img :src="originalImagePath" alt="Wine Image" class="wine-image"/>
+    <img :src="img" alt="Wine Image" class="wine-image"/>
     <div class="wine-info">
       <h3 class="text-xl mb-4">{{ name }}</h3>
       <p class="mb-4" style="color: var(--primary-color)">
@@ -43,7 +43,7 @@
 
 <script lang="ts" setup>
 defineProps<{
-  originalImagePath: string;
+  img: string;
   name: string
   country: string
   region: string

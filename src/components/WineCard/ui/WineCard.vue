@@ -58,12 +58,18 @@ defineProps<{
 }>();
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .wine-detail {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
   position: relative;
+
+  @media screen and (max-width: 785px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 400px 1fr;
+      overflow-y: scroll;
+  }
 }
 
 .wine-image {
@@ -71,9 +77,20 @@ defineProps<{
   top: 0;
   margin: 0 auto;
   max-height: calc(100vh - 200px);
+
+    @media screen and (max-width: 785px) {
+    position: relative;
+    top: auto;
+    max-height: auto;
+    height: 100%;
+    display: block;
+  }
 }
 
 .wine-info {
-  overflow: scroll;
+  overflow-y: scroll;
+      @media screen and (max-width: 785px) {
+  overflow-y: none;
+  }
 }
 </style>

@@ -65,7 +65,7 @@ defineProps<{
   gap: 12px;
   position: relative;
 
-  @media screen and (max-width: 765px) {
+  @media screen and (max-width: 660px) {
     display: block;
     overflow-y: scroll;
   }
@@ -76,8 +76,10 @@ defineProps<{
   top: 0;
   margin: 0 auto;
   max-height: calc(100vh - 300px);
+  min-height: 228px; // Установите минимальную высоту
+  display: block;
 
-  @media screen and (max-width: 765px) {
+  @media screen and (max-width: 660px) {
     position: relative;
     top: auto;
     height: 100%;
@@ -89,7 +91,7 @@ defineProps<{
 
 .wine-info {
   overflow-y: scroll;
-  @media screen and (max-width: 765px) {
+  @media screen and (max-width: 660px) {
     overflow-y: hidden;
   }
 }

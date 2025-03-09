@@ -75,8 +75,9 @@ defineProps<{
   position: sticky;
   top: 0;
   margin: 0 auto;
-  max-height: calc(100vh - 300px);
-  min-height: 228px; // Установите минимальную высоту
+  max-height: 100%;
+  height: 100%;
+  min-height: 228px;
   display: block;
 
   @media screen and (max-width: 660px) {
@@ -85,7 +86,7 @@ defineProps<{
     height: 100%;
     display: block;
     margin: 0 auto 24px;
-    min-height: 200px;
+    max-height: 40vh;
   }
 }
 

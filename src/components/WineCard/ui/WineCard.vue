@@ -7,7 +7,7 @@
         {{ country }},
         {{ region }}
       </p>
-      <p class="mb-4">
+      <p class="mb-4" style="white-space: pre-line;">
         {{ organoleptic }}
       </p>
       <slot/>
@@ -36,7 +36,7 @@
         <strong>Уровень сахара:</strong>
         {{ sugarType }}
       </p>
-      <p>{{ interestingFacts }}</p>
+      <p style="white-space: pre-line;">{{interestingFacts}}</p>
     </div>
   </div>
 </template>

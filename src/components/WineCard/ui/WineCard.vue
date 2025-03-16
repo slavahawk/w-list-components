@@ -29,7 +29,7 @@
         <strong>Цвет:</strong> {{ colour }}
       </p>
       <p class="mb-4">
-        <strong>Алкогольное содержание:</strong>
+        <strong>Алкоголь:</strong>
         {{ alcoholByVolume }} %
       </p>
       <p class="mb-4">

@@ -11,7 +11,7 @@
         {{ organoleptic }}
       </p>
       <slot/>
-      <p class="mb-4">
+      <p class="mb-4" v-if="showVintage(categoryId)">
         <strong>Год урожая:</strong> {{ vintage }}
       </p>
       <p class="mb-4">
@@ -33,7 +33,7 @@
         {{ alcoholByVolume }} %
       </p>
       <p class="mb-4">
-        <strong>Уровень сахара:</strong>
+        <strong>Тип сахара:</strong>
         {{ sugarType }}
       </p>
       <p style="white-space: pre-line;">{{interestingFacts}}</p>
@@ -42,6 +42,9 @@
 </template>
 
 <script lang="ts" setup>
+import { showVintage } from 'w-list-utils';
+import { WineCategoryEnum } from 'wlist-types';
+
 defineProps<{
   img: string;
   name: string
@@ -51,6 +54,7 @@ defineProps<{
   interestingFacts: string
   vintage: string | number
   category: string
+  categoryId: WineCategoryEnum
   colour: string
   alcoholByVolume: number
   sugarType: string

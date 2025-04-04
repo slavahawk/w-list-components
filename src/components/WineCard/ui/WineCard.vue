@@ -83,7 +83,7 @@ defineProps<{
   height: 100%;
   min-height: 228px;
   display: block;
-  width: max-content;
+  max-width: max-content;
 
   @media screen and (max-width: 660px) {
     position: relative;

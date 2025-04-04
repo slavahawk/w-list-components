@@ -9,7 +9,7 @@
   "dependencies": {
     "vue": "^3.5.13",
     "w-list-utils": "^1.0.4",
-    "wlist-types": "^1.0.2"
+    "wlist-types": "^1.0.6"
   },
   "devDependencies": {
     "vue-tsc": "^2.2.0"

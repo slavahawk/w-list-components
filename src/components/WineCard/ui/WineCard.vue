@@ -76,20 +76,17 @@ defineProps<{
 }
 
 .wine-image {
-  position: sticky;
-  top: 0;
+  align-self: center;
+  /* position: relative; */
+  //top: 0;
   margin: 0 auto;
-  max-height: 100%;
-  height: 100%;
-  min-height: 228px;
-  display: block;
-  max-width: max-content;
+  max-height: 86vh;
+  /* height: 100%; */
+  /* min-height: 228px; */
+  /* display: block; */
+  /* max-width: max-content; */
 
   @media screen and (max-width: 660px) {
-    position: relative;
-    top: auto;
-    height: 100%;
-    display: block;
     margin: 0 auto 24px;
     max-height: 40vh;
   }
